@@ -1,0 +1,132 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	"Reg:num": {
+		"prefix": ["reg","reg:num"],
+		"body": [
+			"/^[0-9]*$/$1",
+		],
+		"description": "数字正则表达式"
+	},
+	"Reg:phone": {
+		"prefix": ["reg","reg:phone"],
+		"body": [
+			"/^1[3456789]\\d{9}$/$1",
+		],
+		"description": "电话正则表达式"
+	},
+	"Reg:email": {
+		"prefix": ["reg","reg:email"],
+		"body": [
+			"/^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$/$1",
+		],
+		"description": "邮箱正则表达式"
+	},
+	"Reg:n-num": {
+		"prefix": ["reg","reg:n-num"],
+		"body": [
+			"/^d{n}$/$1",
+		],
+		"description": "n位的数字正则表达式"
+	},
+	"Reg:l-num": {
+		"prefix": ["reg","reg:l-num"],
+		"body": [
+			"/^d{n,}$/$1",
+		],
+		"description": "至少n位的数字正则表达式"
+	},
+	"Reg:ml-num": {
+		"prefix": ["reg","reg:ml-num"],
+		"body": [
+			"/^d{m,n}$/$1",
+		],
+		"description": "m-n位的数字正则表达式"
+	},
+	"Reg:ch": {
+		"prefix": ["reg","reg:ch"],
+		"body": [
+			"/^[\\u4e00-\\u9fa5]{0,}$/$1",
+		],
+		"description": "中文正则表达式"
+	},
+	"Reg:cn-num": {
+		"prefix": ["reg","reg:ch-cn-num"],
+		"body": [
+			"/^[A-Za-z0-9]+$/$1",
+		],
+		"description": "英文和数字正则表达式"
+	},
+	"Reg:ch-cn-num": {
+		"prefix": ["reg","reg:ch-cn-num"],
+		"body": [
+			"/^[\\u4E00-\\u9FA5A-Za-z0-9_]+$/$1",
+		],
+		"description": "中文、英文、数字包括下划线正则表达式"
+	},
+	"Reg:cn": {
+		"prefix": ["reg","reg:cn"],
+		"body": [
+			"/^[A-Za-z]+$/$1",
+		],
+		"description": "英文字母正则表达式"
+	},
+	"Reg:cn-A": {
+		"prefix": ["reg","reg:cn-A"],
+		"body": [
+			"/^[A-Z]+$/$1",
+		],
+		"description": "英文大写正则表达式"
+	},
+	"Reg:cn-a": {
+		"prefix": ["reg","reg:cn-a"],
+		"body": [
+			"/^[a-z]+$/$1",
+		],
+		"description": "英文小写正则表达式"
+	},
+	"Reg:id": {
+		"prefix": ["reg","reg:id"],
+		"body": [
+			"/^((\\d{18})|([0-9x]{18})|([0-9X]{18}))$/$1",
+		],
+		"description": "身份证正则表达式"
+	},
+	"Reg:password": {
+		"prefix": ["reg","reg:password"],
+		"body": [
+			"/[a-zA-Z]\\w{5,17}$/$1",
+		],
+		"description": "以字母开头，长度在6~18之间，只能包含字母、数字和下划线密码正则表达式"
+	},
+	"Reg:date": {
+		"prefix": ["reg","reg:date"],
+		"body": [
+			"/^\\d{4}-\\d{1,2}-\\d{1,2}/$1",
+		],
+		"description": "日期正则表达式"
+	},
+	"Reg:space": {
+		"prefix": ["reg","reg:space"],
+		"body": [
+			"/\\n\\s*\\r/$1",
+		],
+		"description": "空白行的正则表达式"
+	},
+	"Reg:s-space": {
+		"prefix": ["reg","reg:s-space"],
+		"body": [
+			"/^\\s*|\\s*$或(^\\s*)|(\\s*$)/$1",
+		],
+		"description": "首尾空白字符正则表达式"
+	},
+	"Reg:ip": {
+		"prefix": ["reg","reg:ip"],
+		"body": [
+			"/((?:(?:25[0-5]|2[0-4]d|[01]?d?d).){3}(?:25[0-5]|2[0-4]d|[01]?d?d))/$1",
+		],
+		"description": "IP地址正则表达式"
+	}
+}
